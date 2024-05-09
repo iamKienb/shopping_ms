@@ -35,5 +35,7 @@ Deployment is managed via **Docker**, enhancing the system's portability and con
 To get started with this project, ensure you have Docker installed on your system. You can then clone this repository and use Docker Compose to spin up the services:
 
 git clone https://github.com/iamKienb/shopping_ms.git
+
 cd shopping_ms
+
 docker-compose up 
