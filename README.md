@@ -23,19 +23,23 @@ The system uses **Nginx** as an API Gateway, which routes requests to the approp
 Deployment is managed via **Docker**, enhancing the system's portability and consistency across different environments.
 
 ## Technologies Used
-- Node.Js(Express)
-- Microservices
-- RabbitMQ
-- Nginx
-- Docker
-- Rest Api 
 
+- **Node.js**: As the runtime environment.
+- **Express**: Web application framework for Node.js.
+- **Mongoose**: MongoDB object modeling tool designed to work in an asynchronous environment.
+- **Redis**: In-memory data structure store, used as a database, cache, and message broker.
+- **Docker**: Used for containerizing the application and ensuring consistent environments across development and deployment stages.
+- **RabbitMQ**: Messaging broker that enables communication between different microservices using a publish/subscribe model.
 ## Getting Started
 
-To get started with this project, ensure you have Docker installed on your system. You can then clone this repository and use Docker Compose to spin up the services:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-git clone https://github.com/iamKienb/shopping_ms.git
+### Prerequisites
 
-cd shopping_ms
+Make sure you have Docker installed on your machine. You can download it from [Docker's official website](https://www.docker.com/products/docker-desktop).
 
-docker-compose up 
+### Installation
+
+1. Clone the repository: git clone https://github.com/iamKienb/E-commerce.git
+
+2. cd E-commerce and run docker-compose up 
