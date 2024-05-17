@@ -45,7 +45,7 @@ To get the project up and running on your local machine for development and test
 
 1. **Clone the repository:**
    ```
-   git clone https://github.com/iamKienb/Instagram.git
+   git clone https://github.com/iamKienb/shopping_ms.git
    ```
 2. **Build the Docker containers:**
    ```
