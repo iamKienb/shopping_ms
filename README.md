@@ -6,7 +6,7 @@ Welcome to the repository of our Online Food Shopping System. This system is des
 
 The system is composed of several independent microservices, each responsible for a specific domain of the application:
 
-- **User Service**: Manages user information and authentication .
+- **User Service**: Manages CRUD user information and authentication .
 - **Product Service**: Handles all product management 
 - **Shopping Service**: Comprises of two main components:
   - **Cart**: Manages shopping cart operations.
@@ -26,8 +26,10 @@ Deployment is managed via **Docker**, enhancing the system's portability and con
 
 - **Node.js**: As the runtime environment.
 - **Express**: Web application framework for Node.js.
-- **Mongoose**: MongoDB object modeling tool designed to work in an asynchronous environment.
-- **Redis**: In-memory data structure store, used as a database, cache, and message broker.
+- **MongoDb && Mongoose**: MongoDB object modeling tool designed to work in an asynchronous environment.
+- **Redis**: In-memory data structure store, used as a database, cache.
+- **NGINX (Reverse Proxy)**: For routing requests to appropriate microservices.
+- **Multer with Cloudinary**: For handling file uploads and image management.
 - **Docker**: Used for containerizing the application and ensuring consistent environments across development and deployment stages.
 - **RabbitMQ**: Messaging broker that enables communication between different microservices using a publish/subscribe model.
 ## Getting Started
@@ -38,8 +40,14 @@ These instructions will get you a copy of the project up and running on your loc
 
 Make sure you have Docker installed on your machine. You can download it from [Docker's official website](https://www.docker.com/products/docker-desktop).
 
-### Installation
+## Getting Started
+To get the project up and running on your local machine for development and testing purposes, follow these steps:
 
-1. Clone the repository: git clone https://github.com/iamKienb/E-commerce.git
-
-2. cd E-commerce and run docker-compose up 
+1. **Clone the repository:**
+   ```
+   git clone https://github.com/iamKienb/Instagram.git
+   ```
+2. **Build the Docker containers:**
+   ```
+   docker-compose up --build
+   ```
